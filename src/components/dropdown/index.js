@@ -756,6 +756,10 @@ export default class Dropdown extends PureComponent {
                 keyExtractor={this.keyExtractor}
                 scrollEnabled={visibleItemCount < itemCount}
                 contentContainerStyle={styles.scrollContainer}
+                onScroll={this.props.onScroll}
+                onScrollBeginDrag={this.props.onScrollBeginDrag}
+                onScrollEndDrag={this.props.onScrollEndDrag}
+                scrollEventThrottle={this.props.scrollEventThrottle}
               />
             </View>
           </Animated.View>
